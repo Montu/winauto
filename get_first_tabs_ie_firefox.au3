@@ -2,6 +2,7 @@
 Local $bak = ""
 If WinExists("[CLASS:MozillaWindowClass]") Then
 	WinActivate("[CLASS:MozillaWindowClass]")
+	WinWaitActive("[CLASS:MozillaWindowClass]")
 	Send("!d")
 	Send("^c")
 	Sleep(100)
